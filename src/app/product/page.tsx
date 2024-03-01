@@ -31,7 +31,7 @@ export default function Component() {
         <section className="w-full py-12 px-4 md:px-6">
           <div className="container mx-auto grid gap-6 md:grid-cols-2 lg:gap-12">
             <div className="flex flex-col gap-4">
-              <div className="fixed bottom-20 right-20">
+              <div className="">
                 <Button className='bg-accent hover:bg-accent/50' variant="outline">
                   <Link className="flex items-center" href="/">
                     <ArrowLeftIcon className="mr-2 h-4 w-4" />
@@ -43,10 +43,10 @@ export default function Component() {
                 alt="Product Image"
                 className="aspect-square object-cover border border-gray-200 w-full rounded-lg overflow-hidden dark:border-gray-800"
                 height={500}
-                src="/product-3.jpg"
+                src="/bud3.jpg"
                 width={500}
               />
-              <div className="grid gap-2">
+              {/* <div className="grid gap-2">
                 <Label className="text-base" htmlFor="color">
                   Color
                 </Label>
@@ -77,7 +77,7 @@ export default function Component() {
                     Blue
                   </Label>
                 </RadioGroup>
-              </div>
+              </div> */}
               <div className="grid gap-2">
                 <Label className="text-base" htmlFor="size">
                   Size
@@ -87,38 +87,44 @@ export default function Component() {
                   defaultValue="m"
                   id="size"
                 >
+
                   <Label
                     className="border cursor-pointer rounded-md p-2 flex items-center gap-2 [&:has(:checked)]:bg-gray-100 dark:[&:has(:checked)]:bg-gray-800"
                     htmlFor="size-xs"
                   >
-                    <RadioGroupItem id="size-xs" value="xs" />
-                    XS
+                    <RadioGroupItem id="1/8oz" value="1/8oz" />
+                    1/8oz
                   </Label>
+
                   <Label
                     className="border cursor-pointer rounded-md p-2 flex items-center gap-2 [&:has(:checked)]:bg-gray-100 dark:[&:has(:checked)]:bg-gray-800"
-                    htmlFor="size-s"
+                    htmlFor="3.5g"
                   >
-                    <RadioGroupItem id="size-s" value="s" />S
+                    <RadioGroupItem id="3.5oz" value="s" />3.5
                   </Label>
+
                   <Label
                     className="border cursor-pointer rounded-md p-2 flex items-center gap-2 [&:has(:checked)]:bg-gray-100 dark:[&:has(:checked)]:bg-gray-800"
-                    htmlFor="size-m"
+                    htmlFor="7g"
                   >
-                    <RadioGroupItem id="size-m" value="m" />M
+                    <RadioGroupItem id="7g" value="7g" />7g
                   </Label>
+
                   <Label
                     className="border cursor-pointer rounded-md p-2 flex items-center gap-2 [&:has(:checked)]:bg-gray-100 dark:[&:has(:checked)]:bg-gray-800"
-                    htmlFor="size-l"
+                    htmlFor="14g"
                   >
-                    <RadioGroupItem id="size-l" value="l" />L
+                    <RadioGroupItem id="14g" value="14g" />14g
                   </Label>
+
                   <Label
                     className="border cursor-pointer rounded-md p-2 flex items-center gap-2 [&:has(:checked)]:bg-gray-100 dark:[&:has(:checked)]:bg-gray-800"
-                    htmlFor="size-xl"
+                    htmlFor="28g"
                   >
-                    <RadioGroupItem id="size-xl" value="xl" />
-                    XL
+                    <RadioGroupItem id="28g" value="28g" />
+                    28g
                   </Label>
+
                 </RadioGroup>
               </div>
               <div className="grid gap-2">
@@ -153,7 +159,7 @@ export default function Component() {
                 <StarIcon className="w-5 h-5 fill-primary stroke-primary" />
                 <StarIcon className="w-5 h-5 fill-muted stroke-muted-foreground" />
               </div>
-              <h2 className="text-2xl font-bold">$99.99</h2>
+              <h2 className="text-2xl font-bold">$49.99 <span className='ml-1 text-sm text-slate-500'>1/8 oz</span></h2>
               <Accordion className="w-full" collapsible type="single">
                 <AccordionItem value="item-1">
                   <AccordionTrigger>Product Information</AccordionTrigger>
@@ -174,29 +180,10 @@ export default function Component() {
                     </p>
                   </AccordionContent>
                 </AccordionItem>
-                <AccordionItem value="item-3">
-                  <AccordionTrigger>Shipping Information</AccordionTrigger>
-                  <AccordionContent>
-                    <p>
-                      We offer fast and reliable shipping worldwide. Please
-                      allow 2-3 business days for processing and 5-7 business
-                      days for shipping.
-                    </p>
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="item-4">
-                  <AccordionTrigger>Return Policy</AccordionTrigger>
-                  <AccordionContent>
-                    <p>
-                      If you're not satisfied with your purchase, you can return
-                      the product within 30 days for a full refund.
-                    </p>
-                  </AccordionContent>
-                </AccordionItem>
                 <AccordionItem value="item-5">
                   <AccordionTrigger>Related Products</AccordionTrigger>
                   <AccordionContent>
-                    <div className="grid w-[80%] mx-auto my-4 grid-cols-1 md:grid-cols-2 overflow-x-scroll gap-4">
+                    <div className="grid w-[80%] mx-auto my-4 grid-cols-1 overflow-x-scroll gap-4">
                       <Link href="#">
                         <Card>
                           <CardHeader>
@@ -210,7 +197,7 @@ export default function Component() {
                               alt="Product 1"
                               className="object-cover w-full h-60"
                               height={200}
-                              src="/product-1.jpg"
+                              src="/bud1.jpg"
                               style={{
                                 aspectRatio: "200/200",
                                 objectFit: "cover",
@@ -233,7 +220,7 @@ export default function Component() {
                               alt="Product 2"
                               className="object-cover w-full h-60"
                               height={200}
-                              src="/product-6.jpg"
+                              src="/bud6.jpg"
                               style={{
                                 aspectRatio: "200/200",
                                 objectFit: "cover",
@@ -256,7 +243,7 @@ export default function Component() {
                               alt="Product 3"
                               className="object-cover w-full h-60"
                               height={200}
-                              src="/product-4.jpg"
+                              src="/bud4.jpg"
                               style={{
                                 aspectRatio: "200/200",
                                 objectFit: "cover",
@@ -279,7 +266,7 @@ export default function Component() {
                               alt="Product 4"
                               className="object-cover w-full h-60"
                               height={200}
-                              src="/product-5.jpg"
+                              src="/bud5.jpg"
                               style={{
                                 aspectRatio: "200/200",
                                 objectFit: "cover",

@@ -27,13 +27,19 @@ export function Navbar(){
               </DropdownMenuTrigger>
               <DropdownMenuContent align="start">
                 <DropdownMenuItem>
-                  <Link href="#">Clothing</Link>
+                  <Link href="#">Edibles</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <Link href="#">Electronics</Link>
+                  <Link href="#">Flower</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <Link href="#">Home & Kitchen</Link>
+                  <Link href="#">Pre-rolls</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link href="#">Vaporizers</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link href="#">Cartridges</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

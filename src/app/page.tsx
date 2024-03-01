@@ -26,7 +26,7 @@ export default function Component() {
                   alt="Product 1"
                   className="object-cover brightness-75 w-full h-full"
                   height={800}
-                  src="/hero.jpg"
+                  src="/hero2.jpg"
                   style={{
                     aspectRatio: "1200/800",
                     objectFit: "cover",
@@ -63,7 +63,7 @@ export default function Component() {
                 alt="Product 1"
                 className="object-cover w-full h-64"
                 height={500}
-                src="/product-1.jpg"
+                src="/bud1.jpg"
                 style={{
                   aspectRatio: "500/500",
                   objectFit: "cover",
@@ -87,7 +87,7 @@ export default function Component() {
                 alt="Product 2"
                 className="object-cover w-full h-64"
                 height={500}
-                src="/product-2.jpg"
+                src="/bud2.jpg"
                 style={{
                   aspectRatio: "500/500",
                   objectFit: "cover",
@@ -111,7 +111,7 @@ export default function Component() {
                 alt="Product 3"
                 className="object-cover w-full h-64"
                 height={500}
-                src="/product-3.jpg"
+                src="/bud3.jpg"
                 style={{
                   aspectRatio: "500/500",
                   objectFit: "cover",
@@ -142,7 +142,7 @@ export default function Component() {
                 alt="Product 1"
                 className="object-cover w-full h-64"
                 height={500}
-                src="/product-4.jpg"
+                src="/bud4.jpg"
                 style={{
                   aspectRatio: "500/500",
                   objectFit: "cover",
@@ -166,7 +166,7 @@ export default function Component() {
                 alt="Product 2"
                 className="object-cover w-full h-64"
                 height={500}
-                src="/product-5.jpg"
+                src="/bud6.jpg"
                 style={{
                   aspectRatio: "500/500",
                   objectFit: "cover",
@@ -190,7 +190,7 @@ export default function Component() {
                 alt="Product 3"
                 className="object-cover w-full h-64"
                 height={500}
-                src="/product-6.jpg"
+                src="/bud1.jpg"
                 style={{
                   aspectRatio: "500/500",
                   objectFit: "cover",
